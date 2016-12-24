@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>SBS Collector</title>
+	<style type="text/css">
+	 .line1 {
+	 	width: 50%
+	 }
+	 .titles {
+	 	margin-top: 10px;
+	 	font-size: 26px;
+	 }
+	.container {
+		/*margin-right: 15%;*/
+		/*margin-left: 15%;*/
+		align-content: center;
+		text-align: center;
+		background-color: white;
+		height: 100%;
+	}
+	#back {
+		background: url("http://eskipaper.com/images/pyramid-pattern-wallpaper-1.jpg");
+		padding-top: 10%;
+		padding-bottom: 10%;
+		height: 100vh;
+	}
+	#headline {
+		text-decoration: underline;
+		/*margin-bottom: 40px;*/
+	}
+	#headlines{
+		margin-bottom: 30px;
+	}
+	.button {
+	margin-top: 20px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="back">
+		<div class="container">
+			<div id="headlines">
+			<h1 id="headline">Information Form:</h1>
+			<p>Please fill out and submit the follwing information</p>
+			</div>
+			
+			<div class="names">
+				<p class="titles">First Name:</p>
+				<input class="line1" type="text" id="firstname">
+				<p class="titles">Last Name:</p>
+				<input class="line1" type="text" id="lastname">
+				<p class="titles">Email:</p>
+				<input class="line1" type="text" id="email">
+				<p class="titles">Phone Number:</p>
+				<input class="line1" type="text" id="phonenumber">
+				<p class="titles">Address:</p>
+				<input class="line1" type="text" id="address">
+				<p>
+					<a href="#" role="button" class="button" onclick="myFunction()">Submit</a>
+				</p>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+
+		function myFunction() {
+			var firstname = document.getElementsByClassName("line1")[0].value;
+			var lastname = document.getElementsByClassName("line1")[1].value;
+			var email = document.getElementsByClassName("line1")[2].value;
+			var phonenumber = document.getElementsByClassName("line1")[3].value;
+			var address = document.getElementsByClassName("line1")[4].value;
+			alert(firstname);
+			var fh = fopen("/Users/masoodmawlavizada/Desktop/Website/info.txt", 3);
+			if(fh != 1) {
+					alert("lit");
+
+			}
+		}
+
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
