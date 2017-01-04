@@ -12,8 +12,8 @@
 			height: 100%;
 			width: 100%;
 		}
-		#middle {
-			height: 100vh;
+		#middle.jumbotron {
+			height: 100%;
 			background-color: white;
 			margin-top: 1%;
 			margin-bottom: 10%;
@@ -54,9 +54,56 @@
 		.emoji {
 			width: 35px;
 		}
-		#box {
-			background-color: black;
-			height: 20px;
+		.box{
+			box-sizing: border-box;
+/*			background-color: #c0cd97;
+*/			padding: 10px;
+			/*margin: 5px;*/
+			border-radius: 5px;
+			height: 500px;
+			/*border: 1px solid gray;*/
+			text-align: center;
+			align-content: center;
+
+		}
+		.box-image{
+			align-content: center;
+		}
+		.box-i {
+			/*width: 30%;
+			top: 2.5%;
+		    display: inline-block;
+		    left: 50%;
+		    width: 200px;
+		    height: 200px;
+		    padding: 20px;
+		    position: relative;
+		    white-space: nowrap;
+		    z-index: 2;
+		    text-decoration: none;
+		    -webkit-transform: translateX(-50%);
+		    transform: translateX(-50%);
+		    border-radius: 50%;*/
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			position: relative;
+			/*left: 50%;*/
+			/*right: 50%;*/
+		}
+		.box-title{
+			position: relative;
+		}
+		.titles {
+			color: #990000;
+			text-decoration: underline;
+		}
+
+		#website {
+			margin-bottom: 40px;
+		}
+		h1 {
+			text-align: center;
 		}
 	</style>
 </head>
@@ -82,30 +129,114 @@
 				</div>
 				<div id="centerer" class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 					<p>
-					<a href="http://www.stereobase.com" class="btn btn-primary btn-lg btn-block" role="button">Very Happy!  <img class="emoji" src="http://www.clipartkid.com/images/584/smiley-face-with-sunglasses-emoji-emoji-happy-face-white-smiling-Ol0Dbl-clipart.png"></a>
+					<a href="https://www.yelp.com/biz/stereo-base-hayward-3" class="btn btn-primary btn-lg btn-block" role="button">Very Happy!  <img class="emoji" src="http://www.clipartkid.com/images/584/smiley-face-with-sunglasses-emoji-emoji-happy-face-white-smiling-Ol0Dbl-clipart.png"></a>
 					</p>
 				</div>
 				<div id="centerer" class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 					<p>
-						<a href="http://www.yelp.com" class="btn btn-danger btn-lg btn-block" role="button">Not So Happy  <img class="emoji" src="https://www.emojibase.com/resources/img/emojis/apple/x1f612.png.pagespeed.ic.xFUl37MyHA.png"></a>
+						<a href="https://goo.gl/forms/KwWSxGkGaEaXDY7m2" class="btn btn-danger btn-lg btn-block" role="button">Not So Happy  <img class="emoji" src="https://www.emojibase.com/resources/img/emojis/apple/x1f612.png.pagespeed.ic.xFUl37MyHA.png"></a>
 					</p>
 				</div>
 				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-0">
 				</div>
 			</div>
 
-			<!-- <div id="website" class="container">
-				<div id="box" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				sdfkls
+
+
+
+
+
+
+
+
+			<div id="website" class="container">
+				<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="box-image">
+						<img class="box-i" src="http://www.stereobase.com/wp-content/uploads/2016/07/MClass_beauty800x600-e1468720161661.jpg">
+					</div>
+					<div class="box-title">
+						<h2 class="titles">CAR AUDIO</h2>
+					</div>
+					<div class="box-p">
+						<p>At Stereo Base, we carry brands ranging from Alpine, Kicker, Rockford Fosgate, and much more to support your car audio needs.</p>
+					</div>
+					<div class="box-button">
+						<p>
+							<a href="http://www.stereobase.com/services/car-audio/" class="btn btn-default btn-lg" role="button">Click Here for more info</a>
+						</p>
+					</div>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="box-image">
+						<img class="box-i" src="http://www.stereobase.com/wp-content/uploads/2016/07/maxresdefault-2-1-e1468721260874.jpg">
+					</div>
+					<div class="box-title">
+						<h2 class="titles">WINDOW TINT</h2>
+					</div>
+					<div class="box-p">
+						<p>We strive for nothing less than perfection by using machine-cut technology while working in a dust free environment to work on your car.</p>
+					</div>
+					<div class="box-button">
+						<p>
+							<a href="http://www.stereobase.com/services/window-tint/" class="btn btn-default btn-lg" role="button">Click Here for more info</a>
+						</p>
+						
+					</div>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="box-image">
+						<img class="box-i" src="http://www.stereobase.com/wp-content/uploads/2016/07/maxresdefault-e1468721852699.jpg">
+					</div>
+					<div class="box-title">
+						<h2 class="titles">CAR ALARM</h2>
+					</div>
+					<div class="box-p">
+						<p>Leaving your car for even 5 minutes can have you coming back to a broken window! Car security is essential to keeping your belongings safe and keeping the thieves away</p>
+					</div>
+					<div class="box-button">
+						<p>
+							<a href="http://www.stereobase.com/services/car-alarm/" role="button" class="btn btn-default btn-lg" role="button">Click Here for more info</a>
+						</p>
+					
+					</div>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="box-image">
+						<img class="box-i" src="http://www.stereobase.com/wp-content/uploads/2016/07/20150707_170422-e1468722087702.jpg">
+					</div>
+					<div class="box-title">
+						<h2 class="titles">CUSTOMIZATION</h2>
+					</div>
+					<div class="box-p">
+					<p>Want to put 10 15″ woofers in your Honda Civic? This may seem impossible, but just know there is always a way. Our guys have been in this field for years and have great expertise in custom work</p>
+					</div>
+					<div class="box-button">
+						<p>
+							<a href="http://www.stereobase.com/services/customization/" role="button" class="btn btn-default btn-lg" role="button">Click Here for more info</a>
+						</p>
+						
+					</div>
 				</div>
 
 
-			</div> -->
+
+
+
+			</div>
+			<h1>HAVE AN AMAZING DAY!!</h1>
 
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+	//wait for my whole document one then load javascript bc you need to find all html before
+		$(document).ready(function() {
+
+			// $("#website").hide(300);
+		});
+	</script>
 </body>
 
 </html>
